@@ -10,18 +10,21 @@ function Notice() {
   const fetchNotice = async()=>{
     const response = db.collection('Notice');
     const data = await response.get();
-    setNotice([data.docs[0].data()])
+    data.docs.forEach(item=>{
+      setNotice(notice => [...notice, item.data()]);
+     })
     
   }
 
   const [load,setLoad] = useState(false);
 
   useEffect(async()=>{
+    setNotice([])
      setLoad(false);
      fetchNotice();
      await wait(1000);
      setLoad(true);
-   },[])
+   },[5])
 
    if(load && notice.length > 0 && notice){
   return (
@@ -31,8 +34,16 @@ function Notice() {
       <br/>
       <br/>
       <div className='notice'>
-      {notice[0].body}
-      </div>
+      {notice.map((notice,key) => (
+        <div key={key}>
+          <br/>
+          {notice.body}
+          
+        </div>
+      
+      ))
+      }
+      </div>  
     </div>
   )
    } else {

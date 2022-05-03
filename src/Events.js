@@ -21,7 +21,7 @@ function Events() {
     setEvents([])
      setLoad(false);
      fetchEvents();
-     await wait(1500);
+     await wait(1000);
      console.log(events)
      setLoad(true);
    },[5])
@@ -36,6 +36,7 @@ function Events() {
       <div className='notice'>
       {events.map((event,key) => (
         <div key={key}>
+          <br/>
           {event.announcement}
         </div>
       ))
