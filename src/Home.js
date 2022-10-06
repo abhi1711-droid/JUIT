@@ -23,6 +23,7 @@ function Home() {
     history.push('./signin')
 };
 
+  
   return (
     <>
       <div className='main_home'>
@@ -54,6 +55,7 @@ function Home() {
       
     </>
   )
+        
 }
 
 export default Home

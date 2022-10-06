@@ -170,7 +170,7 @@ export default function MessMenu() {
 
   return (
     <div>
-    <Link className='anchor' to="/">Go Back</Link>
+    <Link className='anchor' to="/home">Go Back</Link>
       <h3>Mess Menu</h3>
       <br/>
       <div className='mess'>

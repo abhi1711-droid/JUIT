@@ -29,7 +29,7 @@ function Events() {
    if(load && events.length > 0 && events){
   return (
     <div>
-      <Link className='anchor' to="/">Go Back</Link>
+      <Link className='anchor' to="/home">Go Back</Link>
       <h3>Events</h3>
       <br/>
       <br/>

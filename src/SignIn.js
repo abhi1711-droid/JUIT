@@ -19,7 +19,7 @@ const Login= () => {
       localStorage.setItem('Authenticated',true);
       localStorage.setItem('userName',res.profileObj.givenName);
       localStorage.setItem('userPhotu',res.profileObj.imageUrl);
-      history.push('/')
+      history.push('/home')
   };
 
   const onLoginFailure = (res) => {

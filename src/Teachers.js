@@ -292,7 +292,7 @@ const [prof,setProf] = useState(Profdata[0])
 
   return (
     <div style={{'text-align':'center'}}>
-    <Link className='anchor' to="/">Go Back</Link>
+    <Link className='anchor' to="/home">Go Back</Link>
       <h3>Teachers</h3>
       <CustomSelect value={prof} onChange={setProf}>
         {Profdata.map((c) => (

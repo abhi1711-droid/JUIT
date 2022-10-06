@@ -14,12 +14,12 @@ const App=()=>{
     <>
      <BrowserRouter>
     <Switch>
-      <Route exact path = "/" component={Home} />
+      <Route exact path = "/home" component={Home} />
       <Route exact path = "/events" component={Events} />
       <Route exact path = "/teachers" component={Teachers} />
       <Route exact path = "/messmenu" component={MessMenu} />
       <Route exact path = "/notice" component = {Notice} />
-      <Route path = "/signin" component={Login} />
+      <Route path = "/" component={Login} />
       </Switch>
       </BrowserRouter>
       <div className='bg-balls' />

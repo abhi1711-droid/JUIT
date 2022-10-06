@@ -29,7 +29,7 @@ function Notice() {
    if(load && notice.length > 0 && notice){
   return (
     <div>
-    <Link className='anchor' to="/">Go Back</Link>
+    <Link className='anchor' to="/home">Go Back</Link>
       <h3>Notice</h3>
       <br/>
       <br/>
